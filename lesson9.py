@@ -22,5 +22,5 @@ with open(argv[1], 'r') as input_file:
         line=_.split(';')
         line1=list(map(int, line[0].split()))
         line2=list(map(int, line[1].split()))
-        print(sum(line1)//len(line1)==line2[0] and sum(line1)%len(line1)==line2[1])
+        print(line, sum(line1)//len(line1)==line2[0] and sum(line1)%len(line1)==line2[1])
     
