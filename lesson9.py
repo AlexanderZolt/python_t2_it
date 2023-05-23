@@ -1,4 +1,4 @@
-#Задача 1
+#Задача 1 Знаходимоо номер під'їзду та поверх знаючи номер квартири, кількість квартир на поверсі та кількість поверхів у будинку
 from math import ceil
 flatnumber, flatsonstore, stores= list(map(int, input().split()))
 def address():
@@ -7,7 +7,7 @@ def address():
     store=storeys-((entry-1)*stores)
     return (entry,store)
 print(address())
-# Задача 2
+# Задача 2 Малюємо ромб з непарної кількості зірочок
 diamond=int(input('enter number of stars: '))
 if diamond>0 and diamond%2:
     a=['*'*i for i in range(1, diamond+1, 2)]
@@ -15,7 +15,7 @@ if diamond>0 and diamond%2:
     c=a+b[1:]
     for i in c:
         print(i.center(diamond))
-# Задача 3
+# Задача 3 Перевырка строчок текстового файлу, роздылених на двы частини знаком ";" на відповідність умові
 from sys import argv
 with open(argv[1], 'r') as input_file:
     for _ in input_file:
